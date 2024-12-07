@@ -14,7 +14,9 @@ class SignInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar:AppBar(),
+      appBar:AppBar(
+        automaticallyImplyLeading:false,
+      ),
       body:Padding(
         padding: const EdgeInsets.symmetric(horizontal:20,vertical:0),
         child: SingleChildScrollView(

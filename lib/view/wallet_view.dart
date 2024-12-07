@@ -169,18 +169,21 @@ class WalletView extends StatelessWidget {
                           topRight: Radius.circular(15)),
                     ),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
+                        const SizedBox(width:15,),
                         MyText(
                           text: 'Description',
                           fontSize: 15,
                           color: Colors.white,
                         ),
+                        const SizedBox(width:60,),
                         MyText(
                           text: 'Date',
                           fontSize: 15,
                           color: Colors.white,
                         ),
+                        const SizedBox(width:70,),
                         MyText(
                           text: 'Amount',
                           fontSize: 15,
@@ -201,7 +204,7 @@ class WalletView extends StatelessWidget {
                               height:40,
                               child: Center(
                                   child: MyText(
-                                text: 'Match Booking Fee ',
+                                text: 'Match Booking Fee',
                                 fontSize: 12,
                                 color: Colors.black54,
                               )),
@@ -275,7 +278,7 @@ class WalletView extends StatelessWidget {
                               height:40,
                               child: Center(
                                   child: MyText(
-                                    text: 'Match Booking Fee ',
+                                    text: 'Match Booking Fee',
                                     fontSize: 12,
                                     color: Colors.black54,
                                   )),

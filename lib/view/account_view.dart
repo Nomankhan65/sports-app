@@ -133,10 +133,11 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/Vector.png')),
+                            image:DecorationImage(image:AssetImage('assets/review.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
                         ),
+
                       ),
                       title:MyText(text:'Review & Ratings',fontSize:18,),
                     ),
@@ -164,7 +165,7 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/Vector.png')),
+                            image:DecorationImage(image:AssetImage('assets/privacy.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
                         ),

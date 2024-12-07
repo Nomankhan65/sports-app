@@ -47,7 +47,7 @@ class NotificationView extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height:10,),
+          const SizedBox(height:5,),
           const Divider(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal:10,vertical:1),
@@ -71,11 +71,11 @@ class NotificationView extends StatelessWidget {
                         Row(
                           children: [
                             MyText(text:'New Booking Request',fontSize:18,),
-                            const SizedBox(width:70,),
+                            const SizedBox(width:40,),
                             MyText(text:'12 jun 2014',fontSize:12,),
                           ],
                         ),
-                        MyText(maxlines:2,text:'Booking request for Stadium XYZ Pitch ABCD  ',),
+                        MyText(maxlines:2,text:'Booking request for Stadium XYZ Pitch ABCD',),
 
                       ],
                     )
@@ -118,6 +118,7 @@ class NotificationView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal:10,vertical:1),
             child: Column(
+              crossAxisAlignment:CrossAxisAlignment.start,
               children: [
                 Row(
                   mainAxisAlignment:MainAxisAlignment.spaceAround,
@@ -137,7 +138,7 @@ class NotificationView extends StatelessWidget {
                         Row(
                           children: [
                             MyText(text:'New Booking Request',fontSize:18,),
-                            const SizedBox(width:70,),
+                            const SizedBox(width:40,),
                             MyText(text:'12 jun 2014',fontSize:12,),
                           ],
                         ),
@@ -147,10 +148,8 @@ class NotificationView extends StatelessWidget {
                     )
                   ],
                 ),
-                const SizedBox(height:10,),
-
+                const SizedBox(height:15,),
                 Row(
-                  mainAxisAlignment:MainAxisAlignment.start,
                   children: [
                     const SizedBox(width:95,),
                     Container(
@@ -179,7 +178,7 @@ class NotificationView extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height:10,),
+          const SizedBox(height:5,),
           const Divider(),
         ],
       ),
