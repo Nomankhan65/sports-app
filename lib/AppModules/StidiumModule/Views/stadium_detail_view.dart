@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../Widgets/myButton.dart';
-import '../../../Widgets/myFormField.dart';
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_text.dart';
 import 'package:gosportified/Utils/appColors.dart';
-import 'package:gosportified/AppModules/BokingModule/Views/cricket_detail_view.dart';
 
+import 'cricket_detail_view.dart';
 class StadiumDetailView extends StatelessWidget {
   const StadiumDetailView({super.key});
 

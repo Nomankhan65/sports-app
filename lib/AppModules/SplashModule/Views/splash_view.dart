@@ -1,10 +1,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gosportified/AppModules/AuthModule/Views/signIn_view.dart';
-
 import '../../../Utils/appColors.dart';
-import '../../BokingModule/Views/onboarding_view.dart';
+import 'onboarding_view.dart';
+
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

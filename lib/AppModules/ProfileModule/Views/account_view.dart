@@ -5,7 +5,7 @@ import 'package:gosportified/AppModules/HistoryModule/Views/privacy_policy_view.
 import 'package:gosportified/AppModules/ProfileModule/Views/profile_settings_view.dart';
 import 'package:gosportified/AppModules/ReviewModule/Views/rating_view.dart';
 
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_text.dart';
 
 class AccountView extends StatelessWidget {
   const AccountView({super.key});

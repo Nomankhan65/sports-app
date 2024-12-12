@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../Widgets/myButton.dart';
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_button.dart';
+import '../../../Widgets/my_text.dart';
 import 'package:gosportified/Utils/appColors.dart';
 import 'package:table_calendar/table_calendar.dart';
 

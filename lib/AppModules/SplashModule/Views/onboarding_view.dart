@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_text.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/signIn_view.dart';
 class OnBoardingView extends StatelessWidget {
   const OnBoardingView({super.key});

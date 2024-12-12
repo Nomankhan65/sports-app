@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../Widgets/myButton.dart';
-import '../../../Widgets/myFormField.dart';
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_button.dart';
+import '../../../Widgets/my_form_field.dart';
+import '../../../Widgets/my_text.dart';
 import 'package:gosportified/Utils/appColors.dart';
-import 'package:gosportified/AppModules/BokingModule/Views/card_detail_view.dart';
+
+import '../../BookingModule/Views/card_detail_view.dart';
 
 class WithdrawDetailView extends StatelessWidget {
   const WithdrawDetailView({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../Widgets/myButton.dart';
-import '../../../Widgets/myFormField.dart';
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_button.dart';
+import '../../../Widgets/my_form_field.dart';
+import '../../../Widgets/my_text.dart';
 
 class CardDetailView extends StatelessWidget {
   const CardDetailView({super.key});

@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../Widgets/myButton.dart';
-import '../../../Widgets/myFormField.dart';
-import '../../../Widgets/myText.dart';
+import '../../../Widgets/my_button.dart';
+import '../../../Widgets/my_form_field.dart';
+import '../../../Widgets/my_text.dart';
 import 'package:gosportified/Utils/appColors.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/forgot_password_view.dart';
-import 'package:gosportified/AppModules/HomeModule/Views/home_page.dart';
+import 'package:gosportified/AppModules/HomeModule/ViewModels/home_page.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/signup_view.dart';
 
 class SignInView extends StatelessWidget {

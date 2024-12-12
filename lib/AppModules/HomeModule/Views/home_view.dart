@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../../../Widgets/myFormField.dart';
-import '../../../Widgets/myText.dart';
-import 'package:gosportified/Utils/appColors.dart';
-import 'package:gosportified/AppModules/BokingModule/Views/add_ground_view.dart';
-import 'package:gosportified/AppModules/AuthModule/Views/edit_ground_view.dart';
-import 'package:gosportified/AppModules/BokingModule/Views/stadium_detail_view.dart';
+import '../../../Utils/appColors.dart';
+import '../../../Widgets/my_form_field.dart';
+import '../../../Widgets/my_text.dart';
+import 'package:gosportified/AppModules/StidiumModule/Views/edit_ground_view.dart';
+import '../../StidiumModule/Views/add_ground_view.dart';
+import '../../StidiumModule/Views/stadium_detail_view.dart';
+
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
