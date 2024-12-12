@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gosportified/view/splash_view.dart';
+import 'package:gosportified/AppModules/SplashModule/Views/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
