@@ -5,7 +5,7 @@ import '../../../Widgets/my_form_field.dart';
 import '../../../Widgets/my_text.dart';
 import 'package:gosportified/Utils/appColors.dart';
 
-import '../../BookingModule/Views/card_detail_view.dart';
+import 'card_detail_view.dart';
 
 class WithdrawDetailView extends StatelessWidget {
   const WithdrawDetailView({super.key});
