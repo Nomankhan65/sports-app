@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../Widgets/my_button.dart';
 import '../../../Widgets/my_form_field.dart';
 import '../../../Widgets/my_text.dart';
-import 'package:gosportified/Utils/appColors.dart';
+import 'package:gosportified/Utils/app_colors.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/forgot_password_view.dart';
-import 'package:gosportified/AppModules/HomeModule/ViewModels/home_page.dart';
+import 'package:gosportified/AppModules/HomeModule/Views/app_root_view.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/signup_view.dart';
 
 class SignInView extends StatelessWidget {

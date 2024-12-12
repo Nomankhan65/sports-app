@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../Widgets/my_button.dart';
 import '../../../Widgets/my_form_field.dart';
 import '../../../Widgets/my_text.dart';
-import '../../../Utils/appColors.dart';
+import '../../../Utils/app_colors.dart';
 
 class SignupView extends StatefulWidget {
   const SignupView({super.key});

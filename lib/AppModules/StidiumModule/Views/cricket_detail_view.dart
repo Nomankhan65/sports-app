@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gosportified/AppModules/HistoryModule/Views/manage_time_view.dart';
 import '../../../Widgets/my_text.dart';
-import '../../../Utils/appColors.dart';
+import '../../../Utils/app_colors.dart';
 import 'create_pitch_view.dart';
 
 

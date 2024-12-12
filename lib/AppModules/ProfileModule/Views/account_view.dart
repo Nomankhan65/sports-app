@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gosportified/Utils/appColors.dart';
+import 'package:gosportified/Utils/app_colors.dart';
 import 'package:gosportified/AppModules/HistoryModule/Views/privacy_policy_view.dart';
 import 'package:gosportified/AppModules/ProfileModule/Views/profile_settings_view.dart';
 import 'package:gosportified/AppModules/ReviewModule/Views/rating_view.dart';

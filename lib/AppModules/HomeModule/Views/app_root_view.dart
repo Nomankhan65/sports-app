@@ -4,7 +4,7 @@ import 'package:gosportified/AppModules/HomeModule/Views/home_view.dart';
 import 'package:gosportified/AppModules/NotificationModule/Views/notification_view.dart';
 import 'package:gosportified/AppModules/PaymentModule/View/wallet_view.dart';
 
-import '../../../Utils/appColors.dart';
+import '../../../Utils/app_colors.dart';
 import '../../ProfileModule/Views/account_view.dart';
 
 class HomePage extends StatefulWidget {

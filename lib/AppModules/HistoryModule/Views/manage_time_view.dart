@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../Widgets/my_button.dart';
 import '../../../Widgets/my_text.dart';
-import 'package:gosportified/Utils/appColors.dart';
+import 'package:gosportified/Utils/app_colors.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class ManageTimeView extends StatefulWidget {

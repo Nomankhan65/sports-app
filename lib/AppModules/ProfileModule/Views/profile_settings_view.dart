@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../Widgets/my_button.dart';
 import '../../../Widgets/my_form_field.dart';
 import '../../../Widgets/my_text.dart';
-import 'package:gosportified/Utils/appColors.dart';
+import 'package:gosportified/Utils/app_colors.dart';
 
 class ProfileSettingsView extends StatelessWidget {
   const ProfileSettingsView({super.key});

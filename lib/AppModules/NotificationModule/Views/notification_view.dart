@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../Widgets/my_text.dart';
-import '../../../Utils/appColors.dart';
+import '../../../Utils/app_colors.dart';
 
 class NotificationView extends StatelessWidget {
   const NotificationView({super.key});

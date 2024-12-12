@@ -4,7 +4,7 @@ import 'package:gosportified/AppModules/PaymentModule/View/withdraw_detail_view.
 import '../../../Widgets/my_button.dart';
 import '../../../Widgets/my_form_field.dart';
 import '../../../Widgets/my_text.dart';
-import '../../../Utils/appColors.dart';
+import '../../../Utils/app_colors.dart';
 
 class WalletView extends StatelessWidget {
   const WalletView({super.key});
