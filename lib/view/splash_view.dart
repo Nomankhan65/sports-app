@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gosportified/view/signIn_view.dart';
 
-import '../helper/constans/appColors.dart';
+import '../res/appColors.dart';
 import 'onboarding_view.dart';
 
 class SplashView extends StatefulWidget {

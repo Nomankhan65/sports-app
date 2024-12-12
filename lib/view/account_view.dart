@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gosportified/helper/components/myText.dart';
-import 'package:gosportified/helper/constans/appColors.dart';
+import 'package:gosportified/res/appColors.dart';
 import 'package:gosportified/view/privacy_policy_view.dart';
 import 'package:gosportified/view/profile_settings_view.dart';
 import 'package:gosportified/view/rating_view.dart';
+
+import '../res/components/myText.dart';
 
 class AccountView extends StatelessWidget {
   const AccountView({super.key});

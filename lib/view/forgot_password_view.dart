@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gosportified/view/otp_view.dart';
-
-import '../helper/components/myButton.dart';
-import '../helper/components/myFormField.dart';
-import '../helper/components/myText.dart';
+import '../res/components/myButton.dart';
+import '../res/components/myFormField.dart';
+import '../res/components/myText.dart';
 
 class ForgotPasswordView extends StatelessWidget {
   const ForgotPasswordView({super.key});

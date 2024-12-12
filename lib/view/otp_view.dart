@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gosportified/helper/constans/appColors.dart';
-import '../helper/components/myButton.dart';
-import '../helper/components/myText.dart';
+import 'package:gosportified/res/appColors.dart';
+import '../res/components/myButton.dart';
+import '../res/components/myFormField.dart';
+import '../res/components/myText.dart';
 
 class OtpView extends StatelessWidget {
   const OtpView({super.key});

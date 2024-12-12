@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../helper/components/myButton.dart';
-import '../helper/components/myFormField.dart';
-import '../helper/components/myText.dart';
-import '../helper/constans/appColors.dart';
+import '../res/components/myButton.dart';
+import '../res/components/myFormField.dart';
+import '../res/components/myText.dart';
+import '../res/appColors.dart';
 
 class SignupView extends StatefulWidget {
   const SignupView({super.key});

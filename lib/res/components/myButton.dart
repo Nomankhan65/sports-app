@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../constans/appColors.dart';
+import '../appColors.dart';
 import 'myText.dart';
 
 class MyButton extends StatelessWidget {

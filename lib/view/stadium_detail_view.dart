@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gosportified/helper/components/myText.dart';
-import 'package:gosportified/helper/constans/appColors.dart';
+import '../res/components/myButton.dart';
+import '../res/components/myFormField.dart';
+import '../res/components/myText.dart';
+import 'package:gosportified/res/appColors.dart';
 import 'package:gosportified/view/cricket_detail_view.dart';
 
 class StadiumDetailView extends StatelessWidget {
