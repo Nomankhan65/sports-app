@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 class MyFormField extends StatelessWidget {
   double horizonatlPadding, verticalPadding;
   String text;
-    MyFormField({super.key,this.horizonatlPadding=20,this.verticalPadding=10, required this.text});
+  Widget? icon;
+    MyFormField({super.key,this.icon,this.horizonatlPadding=20,this.verticalPadding=10, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +15,10 @@ class MyFormField extends StatelessWidget {
       child: SizedBox(
         height:65,
         child: TextFormField(
+
           cursorColor: Colors.lightBlue,
           decoration: InputDecoration(
+            suffixIcon:icon,
               fillColor:const Color(0xffF3F3F3),
               filled: true,
               hintText:text,

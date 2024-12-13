@@ -35,9 +35,9 @@ class OnBoardingView extends StatelessWidget {
               child:  Column(
                 crossAxisAlignment:CrossAxisAlignment.start,
                 children: [
-                  Padding(
+                    Padding(
                     padding: const EdgeInsets.fromLTRB(20,57,0,0),
-                    child:MyText(text:'Efficiently Manage Your Stadium Operations',fontSize:28,maxlines:2,),
+                    child:MyText(text:'Efficiently Manage Your Stadium Operations',font:FontWeight.bold,fontSize:28,maxlines:2,),
                   ),
                     Padding(
                     padding: const EdgeInsets.fromLTRB(20,15,0,0),

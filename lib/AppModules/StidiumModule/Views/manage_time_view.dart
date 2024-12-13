@@ -25,28 +25,35 @@ class _ManageTimeViewState extends State<ManageTimeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar:  Padding(
+        padding: const EdgeInsets.all(20),
+        child: MyButton(text: 'Save', onTap: (){}),
+      ),
       appBar:AppBar(
-        title:MyText(text:'Manage Time',),
+        title:MyText(  font:FontWeight.bold,text:'Manage Time',),
       ),
       body:SingleChildScrollView(
         child: Column(
           children: [
-            TableCalendar(
-              firstDay: DateTime(2000),
-        lastDay: DateTime(2101),
-        focusedDay: _selectedDate,
-        selectedDayPredicate: (day) => isSameDay(day, _selectedDate),
-        onDaySelected: (selectedDay, focusedDay) {
-          setState(() {
-            _selectedDate = selectedDay;
-          });
-        },
-        calendarFormat: _calendarFormat,
-        onFormatChanged: (format) {
-          setState(() {
-            _calendarFormat = format;
-          });
-        },
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: TableCalendar(
+                firstDay: DateTime(2000),
+                      lastDay: DateTime(2101),
+                      focusedDay: _selectedDate,
+                      selectedDayPredicate: (day) => isSameDay(day, _selectedDate),
+                      onDaySelected: (selectedDay, focusedDay) {
+                        setState(() {
+              _selectedDate = selectedDay;
+                        });
+                      },
+                      calendarFormat: _calendarFormat,
+                      onFormatChanged: (format) {
+                        setState(() {
+              _calendarFormat = format;
+                        });
+                      },
+              ),
             ),
 
              const Divider(),
@@ -55,7 +62,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
             child: Row(
               mainAxisAlignment:MainAxisAlignment.spaceBetween,
               children: [
-                MyText(text:'10:00 AM - 11:00 AM',color:primaryLight,fontSize:16,),
+                MyText(font:FontWeight.bold,text:'10:00 AM - 11:00 AM',color:primaryLight,fontSize:16,),
                 Container(
                   height:30,
                   width:90,
@@ -63,7 +70,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
                     borderRadius:BorderRadius.circular(50),
                     color:primaryLight,
                   ),
-                  child:Center(child: MyText(text:'Booked',color:Colors.white,)),
+                  child:Center(child: MyText(font:FontWeight.bold,text:'Booked',color:Colors.white,)),
         
                 )
               ],
@@ -75,7 +82,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
               child: Row(
                 mainAxisAlignment:MainAxisAlignment.spaceBetween,
                 children: [
-                  MyText(text:'11:00 AM - 12:00 AM',color:Colors.black45,fontSize:16,),
+                  MyText(font:FontWeight.bold,text:'11:00 AM - 12:00 AM',color:Colors.black45,fontSize:16,),
                   Container(
                     height:30,
                     width:90,
@@ -85,7 +92,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
                         color:Colors.black54
                       ),
                     ),
-                    child:Center(child: MyText(text:'Free',color:Colors.black54,)),
+                    child:Center(child: MyText(font:FontWeight.bold,text:'Free',color:Colors.black54,)),
         
                   )
                 ],
@@ -97,7 +104,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
               child: Row(
                 mainAxisAlignment:MainAxisAlignment.spaceBetween,
                 children: [
-                  MyText(text:'01:00 AM - 02:00 AM',color:primaryLight,fontSize:16,),
+                  MyText(  font:FontWeight.bold,text:'01:00 AM - 02:00 AM',color:primaryLight,fontSize:16,),
                   Container(
                     height:30,
                     width:90,
@@ -105,7 +112,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
                       borderRadius:BorderRadius.circular(50),
                       color:primaryLight,
                     ),
-                    child:Center(child: MyText(text:'Booked',color:Colors.white,)),
+                    child:Center(child: MyText(  font:FontWeight.bold,text:'Booked',color:Colors.white,)),
         
                   )
                 ],
@@ -117,7 +124,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
               child: Row(
                 mainAxisAlignment:MainAxisAlignment.spaceBetween,
                 children: [
-                  MyText(text:'11:00 AM - 12:00 AM',color:Colors.black45,fontSize:16,),
+                  MyText(  font:FontWeight.bold,text:'11:00 AM - 12:00 AM',color:Colors.black45,fontSize:16,),
                   Container(
                     height:30,
                     width:90,
@@ -127,7 +134,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
                           color:Colors.black54
                       ),
                     ),
-                    child:Center(child: MyText(text:'Free',color:Colors.black54,)),
+                    child:Center(child: MyText(  font:FontWeight.bold,text:'Free',color:Colors.black54,)),
         
                   )
                 ],
@@ -139,7 +146,7 @@ class _ManageTimeViewState extends State<ManageTimeView> {
               child: Row(
                 mainAxisAlignment:MainAxisAlignment.spaceBetween,
                 children: [
-                  MyText(text:'03:00 AM - 04:00 AM',color:primaryLight,fontSize:16,),
+                  MyText(  font:FontWeight.bold,text:'03:00 AM - 04:00 AM',color:primaryLight,fontSize:16,),
                   Container(
                     height:30,
                     width:90,
@@ -147,20 +154,14 @@ class _ManageTimeViewState extends State<ManageTimeView> {
                       borderRadius:BorderRadius.circular(50),
                       color:primaryLight,
                     ),
-                    child:Center(child: MyText(text:'Booked',color:Colors.white,)),
+                    child:Center(child: MyText(  font:FontWeight.bold,text:'Booked',color:Colors.white,)),
         
                   )
                 ],
               ),
             ),
             const Divider(),
-            const SizedBox(
-              height:200,
-            ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: MyButton(text: 'Save', onTap: (){}),
-            )
+
           ],
         ),
       ),

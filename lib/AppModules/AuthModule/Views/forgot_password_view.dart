@@ -22,6 +22,7 @@ class ForgotPasswordView extends StatelessWidget {
                 text:'Forget Password',
                 color:const Color(0xff393939),
                 fontSize:28,
+                font:FontWeight.bold,
               ),
               const SizedBox(height:15,),
               MyText(
@@ -32,6 +33,7 @@ class ForgotPasswordView extends StatelessWidget {
               ),
               const SizedBox(height:50,),
               MyText(
+                font:FontWeight.bold,
                 text:'Email',
                 color:Colors.black87,
                 fontSize:18,

@@ -6,7 +6,8 @@ class MyText extends StatelessWidget {
   Color? color;
   int maxlines;
   double? spacing;
-  MyText({super.key,this.text,this.fontSize,this.color,this.spacing,this.maxlines=1});
+  var font;
+  MyText({super.key,this.text,this.fontSize,this.color,this.spacing,this.maxlines=1,this.font});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,8 @@ class MyText extends StatelessWidget {
         color:color,
         letterSpacing:spacing,
         fontFamily:'Mulish',
-        overflow:TextOverflow.ellipsis
+        overflow:TextOverflow.ellipsis,
+        fontWeight:font
 
     ),);
   }

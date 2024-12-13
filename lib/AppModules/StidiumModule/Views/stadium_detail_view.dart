@@ -11,7 +11,7 @@ class StadiumDetailView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: MyText(
-          text: 'Stadium Details',
+          text: 'Stadium Details',  font:FontWeight.bold,
         ),
       ),
       body: Padding(
@@ -19,7 +19,7 @@ class StadiumDetailView extends StatelessWidget {
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.start,
           children: [
-            MyText(
+            MyText(  font:FontWeight.bold,
               text: 'National XYZ Stadium',
               fontSize: 20,
             ),
@@ -49,11 +49,12 @@ class StadiumDetailView extends StatelessWidget {
                         mainAxisAlignment:MainAxisAlignment.spaceBetween,
                         children: [
                           MyText(
+                            font:FontWeight.bold,
                             text: 'Games',
                             fontSize: 18,
                             color: Colors.white,
                           ),
-                          MyText(
+                          MyText(  font:FontWeight.bold,
                             text: 'Action',
                             fontSize: 18,
                             color: Colors.white,
@@ -73,6 +74,7 @@ class StadiumDetailView extends StatelessWidget {
                             Navigator.push(context,MaterialPageRoute(builder: (_)=>const CricketDetailView()));
                           },
                           child: MyText(
+                            font:FontWeight.bold,
                             text: 'Cricket',
                             fontSize: 18,
                             color:Colors.black54,
@@ -99,6 +101,7 @@ class StadiumDetailView extends StatelessWidget {
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
                         MyText(
+                          font:FontWeight.bold,
                           text: 'Tennis',
                           fontSize: 18,
                           color:Colors.black54,
@@ -123,6 +126,7 @@ class StadiumDetailView extends StatelessWidget {
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
                         MyText(
+                          font:FontWeight.bold,
                           text: 'Basketball',
                           fontSize: 18,
                           color:Colors.black54,

@@ -19,6 +19,7 @@ class OtpView extends StatelessWidget {
             crossAxisAlignment:CrossAxisAlignment.start,
             children: [
               MyText(
+                font:FontWeight.bold,
                 text:'Verify Code',
                 color:const Color(0xff393939),
                 fontSize:28,
@@ -60,6 +61,7 @@ class OtpView extends StatelessWidget {
               const SizedBox(height:30,),
               Center(
                 child: MyText(
+                  font:FontWeight.bold,
                   text:'Didn’t receive OTP?',
                   color:Colors.black54,
                   fontSize:15,
@@ -68,6 +70,7 @@ class OtpView extends StatelessWidget {
               const SizedBox(height:7,),
               Center(
                 child: MyText(
+                  font:FontWeight.bold,
                   text:'Resend code',
                   color:primaryLight,
                   fontSize:15,

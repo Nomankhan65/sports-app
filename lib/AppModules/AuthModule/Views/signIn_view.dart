@@ -16,6 +16,7 @@ class SignInView extends StatelessWidget {
     return  Scaffold(
       appBar:AppBar(
         automaticallyImplyLeading:false,
+        backgroundColor:Colors.transparent,
       ),
       body:Padding(
         padding: const EdgeInsets.symmetric(horizontal:20,vertical:0),
@@ -25,10 +26,11 @@ class SignInView extends StatelessWidget {
             children: [
               MyText(
                 text:'Sign in',
-                color:const Color(0xff393939),
+                color:Colors.black87,
                 fontSize:28,
+                font:FontWeight.bold,
               ),
-              const SizedBox(height:15,),
+              const SizedBox(height:13,),
               MyText(
                 text:'Hi! Welcome back, you’ve been missed',
                 color:Colors.black45,
@@ -39,6 +41,7 @@ class SignInView extends StatelessWidget {
                 text:'Email',
                 color:Colors.black87,
                 fontSize:18,
+                font:FontWeight.bold,
               ),
            MyFormField(text:'example@gmail.com',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:40,),
@@ -46,8 +49,9 @@ class SignInView extends StatelessWidget {
                 text:'Password',
                 color:Colors.black87,
                 fontSize:18,
+                font:FontWeight.bold,
               ),
-              MyFormField(text:'************',horizonatlPadding:0,verticalPadding:5,),
+              MyFormField(text:'************',horizonatlPadding:0,verticalPadding:0,),
               Align(
                 alignment:Alignment.topRight,
                 child:TextButton(onPressed: (){
@@ -56,9 +60,10 @@ class SignInView extends StatelessWidget {
                   text:'Forgot password?',
                   color:primaryLight,
                   fontSize:15,
+
                 ),)
               ),
-              const SizedBox(height:40,),
+              const SizedBox(height:30,),
 
              MyButton(onTap:(){
                Navigator.push(context,MaterialPageRoute(builder: (c)=>const HomePage()));
@@ -73,7 +78,7 @@ class SignInView extends StatelessWidget {
                     color:Colors.black26,
                   ),
                   const SizedBox(width:10,),
-                  MyText(text:'Or sign in with',fontSize:15,color:Colors.black54,),
+                  MyText(text:'Or sign in with',fontSize:15,color:Colors.black54,  font:FontWeight.bold,),
                   const SizedBox(width:10,),
                   Container(
                     height:1,
@@ -82,7 +87,7 @@ class SignInView extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height:40,),
+              const SizedBox(height:30,),
               Center(
                 child: Container(
                   height:80,
@@ -94,14 +99,14 @@ class SignInView extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height:40,),
+              const SizedBox(height:20,),
               Row(
                 mainAxisAlignment:MainAxisAlignment.center,
                 children: [
-                  MyText(text:'Don’t have an account?',fontSize:18,color:Colors.black54,),
+                  MyText(  font:FontWeight.bold,text:'Don’t have an account?',fontSize:18,color:Colors.black54,),
                   TextButton(onPressed: (){
                     Navigator.push(context,MaterialPageRoute(builder: (c)=>const SignupView()));
-                  }, child: MyText(text:'Sign up',fontSize:18,color:const Color(0xff2D8E00),))
+                  }, child: MyText(  font:FontWeight.bold,text:'Sign up',fontSize:18,color:const Color(0xff2D8E00),))
                 ],
               )
             ],

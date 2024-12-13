@@ -25,12 +25,14 @@ class _SignupViewState extends State<SignupView> {
             crossAxisAlignment:CrossAxisAlignment.start,
             children: [
               MyText(
+                font:FontWeight.bold,
                 text:'Sign Up',
                 color:const Color(0xff393939),
                 fontSize:28,
               ),
               const SizedBox(height:15,),
               MyText(
+
                 text:'By signing up, you agree the Terms of Service and Privacy Policy',
                 color:Colors.black45,
                 maxlines:2,
@@ -38,6 +40,7 @@ class _SignupViewState extends State<SignupView> {
               ),
               const SizedBox(height:20,),
               MyText(
+                font:FontWeight.bold,
                 text:'Name',
                 color:Colors.black87,
                 fontSize:18,
@@ -52,6 +55,7 @@ class _SignupViewState extends State<SignupView> {
               MyFormField(text:'example@gmail.com',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:15,),
               MyText(
+                font:FontWeight.bold,
                 text:'Phone number',
                 color:Colors.black87,
                 fontSize:18,
@@ -59,6 +63,7 @@ class _SignupViewState extends State<SignupView> {
               MyFormField(text:'+971 |  Enter phone number',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:15,),
               MyText(
+                font:FontWeight.bold,
                 text:'Password',
                 color:Colors.black87,
                 fontSize:18,
@@ -78,11 +83,13 @@ class _SignupViewState extends State<SignupView> {
                 },
               ),
                   MyText(
+                    font:FontWeight.bold,
                     text:'Agree with ',
                     color:Colors.black45,
                     fontSize:15,
                   ),
                   MyText(
+                    font:FontWeight.bold,
                     text:'Terms & conditions',
                     color:primaryLight,
                     fontSize:15,
@@ -102,7 +109,9 @@ class _SignupViewState extends State<SignupView> {
                     color:Colors.black26,
                   ),
                   const SizedBox(width:10,),
-                  MyText(text:'Or sign up with',fontSize:15,color:Colors.black54,),
+                  MyText(
+                    font:FontWeight.bold,
+                    text:'Or sign up with',fontSize:15,color:Colors.black54,),
                   const SizedBox(width:10,),
                   Container(
                     height:1,
@@ -127,7 +136,9 @@ class _SignupViewState extends State<SignupView> {
               Row(
                 mainAxisAlignment:MainAxisAlignment.center,
                 children: [
-                  MyText(text:'Already have an account?',fontSize:18,color:Colors.black54,),
+                  MyText(
+                    font:FontWeight.bold,
+                    text:'Already have an account?',fontSize:18,color:Colors.black54,),
                   TextButton(onPressed: (){
                     Navigator.pop(context);
                   }, child: MyText(text:'Sign in',fontSize:18,color:const Color(0xff2D8E00),))

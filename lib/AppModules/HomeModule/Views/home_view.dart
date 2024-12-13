@@ -20,7 +20,7 @@ class HomeView extends StatelessWidget {
             color:Colors.white
         ),
         backgroundColor:primaryLight,
-        title:MyText(text:'Home',color:Colors.white,fontSize:20,),
+        title:MyText(text:'Home',color:Colors.white,fontSize:20,  font:FontWeight.bold,),
         actions:[Image.asset('assets/notify.png'),
         const SizedBox(width:20,),
         ]
@@ -29,7 +29,7 @@ class HomeView extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal:20),
         child: Column(
           children: [
-            MyFormField(horizonatlPadding:0,text:'Search...'),
+            MyFormField(horizonatlPadding:0,text:'Search...',icon:const Icon(Icons.search),),
             Container(
               height:80,
               width:double.infinity,
@@ -44,7 +44,7 @@ class HomeView extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment:MainAxisAlignment.spaceBetween,
                   children: [
-                    MyText(text:'My Stadiums',fontSize:18,),
+                    MyText(  font:FontWeight.bold,text:'My Stadiums',fontSize:18,),
                     InkWell(
                       onTap:(){
                         Navigator.push(context,MaterialPageRoute(builder: (c)=>const AddgroundScreen()));
@@ -86,7 +86,7 @@ class HomeView extends StatelessWidget {
                       ),
                       child:const Icon(Icons.stadium),
                     ),
-                    title:MyText(text:'National ABC Stadium',fontSize:18,),
+                    title:MyText(font:FontWeight.bold,text:'National ABC Stadium',fontSize:18,),
                     subtitle:Row(
                       children: [
                         const Icon(Icons.location_on_outlined,size:15,color:Colors.black45,),
@@ -100,7 +100,7 @@ class HomeView extends StatelessWidget {
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
                         MyText(text:'Timings',color:Colors.black45,fontSize:16,),
-                        MyText(text:'09:00 AM - 08:00 PM',color:Colors.black87,fontSize:16,)
+                        MyText(text:'09:00 AM - 08:00 PM',color:Colors.black,fontSize:16,)
                       ],
                     ),
                   ),
@@ -110,7 +110,7 @@ class HomeView extends StatelessWidget {
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
                         MyText(text:'Type of Game ',color:Colors.black45,fontSize:16,),
-                        MyText(text:'Cricket, Football',color:Colors.black87,fontSize:16,)
+                        MyText(text:'Cricket, Football',color:Colors.black,fontSize:16,)
                       ],
                     ),
                   ),
@@ -130,7 +130,7 @@ class HomeView extends StatelessWidget {
                               color:primaryLight
                             )
                           ),
-                          child:Center(child: MyText(text:'View',color:primaryLight,fontSize:18,)),
+                          child:Center(child: MyText( font:FontWeight.bold,text:'View',color:primaryLight,fontSize:18,)),
                         ),
                       ),
                       InkWell(
@@ -144,7 +144,7 @@ class HomeView extends StatelessWidget {
                               borderRadius:BorderRadius.circular(10),
                                color:primaryLight
                           ),
-                          child:Center(child: MyText(text:'Edit',color:Colors.white,fontSize:18,)),
+                          child:Center(child: MyText(  font:FontWeight.bold,text:'Edit',color:Colors.white,fontSize:18,)),
                         ),
                       )
                     ],

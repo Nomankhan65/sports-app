@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gosportified/AppModules/HistoryModule/Views/manage_time_view.dart';
+import 'package:gosportified/AppModules/StidiumModule/Views/manage_time_view.dart';
 import '../../../Widgets/my_text.dart';
 import '../../../Utils/app_colors.dart';
 import 'create_pitch_view.dart';
@@ -13,7 +13,7 @@ class CricketDetailView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title:MyText(text:'Cricket Details',fontSize:20,),
+            title:MyText(  font:FontWeight.bold,text:'Cricket Details',fontSize:20,),
         ),
         body:Padding(
           padding: const EdgeInsets.symmetric(horizontal:20),
@@ -33,7 +33,7 @@ class CricketDetailView extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment:MainAxisAlignment.spaceBetween,
                     children: [
-                      MyText(text:'Create Pitch',fontSize:18,),
+                      MyText(  font:FontWeight.bold,text:'Create Pitch',fontSize:18,),
                       InkWell(
                         onTap:(){
                           Navigator.push(context,MaterialPageRoute(builder: (c)=>const CreatePitchView()));
@@ -68,12 +68,12 @@ class CricketDetailView extends StatelessWidget {
                     mainAxisAlignment:MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment:CrossAxisAlignment.start,
                     children: [
-                      MyText(text:'National ABC Stadium',fontSize:18,),
+                      MyText(  font:FontWeight.bold,text:'National ABC Stadium',fontSize:18,),
                             Row(
                               mainAxisAlignment:MainAxisAlignment.spaceBetween,
                               crossAxisAlignment:CrossAxisAlignment.start,
                               children: [
-                                MyText(text:'Booked Slot',fontSize:16,color:Colors.black54,),
+                                MyText(  font:FontWeight.bold,text:'Booked Slot',fontSize:16,color:Colors.black54,),
                                 Column(
                                   children: [
                                     MyText(text:'05:00 PM - 07:00PM',fontSize:16,color:Colors.black54,),
@@ -98,7 +98,7 @@ class CricketDetailView extends StatelessWidget {
                                       color:primaryLight
                                   )
                               ),
-                              child:Center(child: MyText(text:'Manage Time',color:primaryLight,fontSize:18,)),
+                              child:Center(child: MyText(  font:FontWeight.bold,text:'Manage Time',color:primaryLight,fontSize:18,)),
                             ),
                           ),
                           InkWell(
@@ -107,7 +107,7 @@ class CricketDetailView extends StatelessWidget {
                                 context: context,
                                 builder: (BuildContext context) {
                                   return AlertDialog(
-                                    title:MyText(text:'Hi James Leo',fontSize:22,),
+                                    title:MyText(  font:FontWeight.bold,text:'Hi James Leo',fontSize:22,),
                                     content:MyText(text:'Are you sure you want to delete?',fontSize:18,color:Colors.black45,),
                                     actions: [
                                       Row(
@@ -126,7 +126,7 @@ class CricketDetailView extends StatelessWidget {
                                                       color:primaryLight
                                                   )
                                               ),
-                                              child:Center(child: MyText(text:'No',color:primaryLight,fontSize:18,)),
+                                              child:Center(child: MyText(  font:FontWeight.bold,text:'No',color:primaryLight,fontSize:18,)),
                                             ),
                                           ),
                                           Container(
@@ -136,7 +136,7 @@ class CricketDetailView extends StatelessWidget {
                                                 borderRadius:BorderRadius.circular(10),
                                                 color:primaryLight
                                             ),
-                                            child:Center(child: MyText(text:'Yes',color:Colors.white,fontSize:18,)),
+                                            child:Center(child: MyText(  font:FontWeight.bold,text:'Yes',color:Colors.white,fontSize:18,)),
                                           ),
                                         ],
                                       )
@@ -152,7 +152,7 @@ class CricketDetailView extends StatelessWidget {
                                   borderRadius:BorderRadius.circular(10),
                                   color:primaryLight
                               ),
-                              child:Center(child: MyText(text:'Delete',color:Colors.white,fontSize:18,)),
+                              child:Center(child: MyText(  font:FontWeight.bold,text:'Delete',color:Colors.white,fontSize:18,)),
                             ),
                           )
                         ],

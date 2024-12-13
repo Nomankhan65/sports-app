@@ -12,18 +12,18 @@ class CreatePitchView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title:MyText(text:'Create Pitch',fontSize:20,),
+        title:MyText(font:FontWeight.bold,text:'Create Pitch',fontSize:20,),
       ),
       body:Padding(
         padding: const EdgeInsets.symmetric(horizontal:20,vertical:5),
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.start,
           children: [
-            MyText(text:'Pitch* ',fontSize:18,),
+            MyText(font:FontWeight.bold,text:'Pitch* ',fontSize:18,),
             MyFormField(horizonatlPadding:0,text:'Pitch Name'),
-            MyText(text:' Location of Stadium* ',fontSize:18,),
+            MyText(font:FontWeight.bold,text:' Location of Stadium* ',fontSize:18,),
             MyFormField(horizonatlPadding:0,text:'Enter Rate Amount in AED '),
-            MyText(text:'Peak Hours Rate* ',fontSize:18,),
+            MyText(font:FontWeight.bold,text:'Peak Hours Rate* ',fontSize:18,),
             MyFormField(horizonatlPadding:0,text:'Enter Rate Amount in AED '),
             const SizedBox(height:20,),
             Container(
@@ -40,7 +40,7 @@ class CreatePitchView extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment:MainAxisAlignment.spaceBetween,
                   children: [
-                    MyText(text:'Peak Hours Slots',fontSize:18,),
+                    MyText(font:FontWeight.bold,text:'Peak Hours Slots',fontSize:18,),
                     InkWell(
                       onTap:(){
                         showDialog(
