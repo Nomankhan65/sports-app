@@ -15,7 +15,6 @@ class MyFormField extends StatelessWidget {
       child: SizedBox(
         height:65,
         child: TextFormField(
-
           cursorColor: Colors.lightBlue,
           decoration: InputDecoration(
             suffixIcon:icon,
@@ -33,7 +32,7 @@ class MyFormField extends StatelessWidget {
               focusedBorder:const OutlineInputBorder(
                   borderRadius:BorderRadius.all(Radius.circular(15)),
                   borderSide:BorderSide(
-                    color:Colors.white,
+                    color:Color(0xffF3F3F3),
                   )
               )
 

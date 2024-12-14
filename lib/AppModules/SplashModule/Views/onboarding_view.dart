@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gosportified/AppModules/SplashModule/Views/onboarding_view_two.dart';
 import '../../../Widgets/my_text.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/signIn_view.dart';
 class OnBoardingView extends StatelessWidget {
@@ -91,7 +92,7 @@ class OnBoardingView extends StatelessWidget {
                       ),
                       onPressed: (){
 
-                    Navigator.push(context,MaterialPageRoute(builder: (_)=>const SignInView()));
+                    Navigator.push(context,MaterialPageRoute(builder: (_)=>const OnboardingViewTwo()));
                   }, child:const Icon(Icons.arrow_forward,color:Colors.white,)),
                 ),
               ))

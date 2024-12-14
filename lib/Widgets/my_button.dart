@@ -18,5 +18,5 @@ class MyButton extends StatelessWidget {
             style:ElevatedButton.styleFrom(
                 backgroundColor:primaryLight
             ),
-            onPressed: onTap, child:MyText(text:text,fontSize:18,color:Colors.white,)));}
+            onPressed: onTap, child:MyText(text:text,fontSize:18,color:Colors.white,font:FontWeight.bold,)));}
 }

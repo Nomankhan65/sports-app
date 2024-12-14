@@ -18,6 +18,7 @@ class AccountView extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment:CrossAxisAlignment.start,
+
             children: [
               ListTile(
                 leading: Container(
@@ -31,34 +32,43 @@ class AccountView extends StatelessWidget {
                 title: MyText(
                   text: 'James Leo',
                   fontSize: 20,
+                  font:FontWeight.bold,
                 ),
-                subtitle: MyText(
-                  text: 'jamesleo@gmail.com',
-                  color: Colors.black45,
-                ),
-              ),
-              Row(
-                mainAxisAlignment:MainAxisAlignment.start,
-                crossAxisAlignment:CrossAxisAlignment.center,
-                children: [
-                  const SizedBox(width:90,),
-                  MyText(
-                    text: '(4,0)',
-                    color: Colors.black45,
-                  ),
-                  MyText(
-                    text: '*****',
-                    color: Colors.orange,fontSize: 20,
-                  ),
+                subtitle: Column(
+                  mainAxisAlignment:MainAxisAlignment.start,
+                  crossAxisAlignment:CrossAxisAlignment.start,
+                  children: [
+                    MyText(
+                      text: 'jamesleo@gmail.com',
+                      color: Colors.black45,
+                      font:FontWeight.bold,
+                    ),
+                    Row(
+                      mainAxisAlignment:MainAxisAlignment.start,
+                      crossAxisAlignment:CrossAxisAlignment.start,
+                      children: [
+                        MyText(
+                          text: '(4,0)',
+                          color: Colors.black45,
+                        ),
+                        MyText(
+                          text: '*****',
+                          color: Colors.orange,fontSize: 22,
+                        ),
 
-                ],
+                      ],
+                    ),
+                  ],
+                ),
               ),
+
               const SizedBox(height:10,),
               const Divider(
                 height:2,
               ),
               const SizedBox(height:10,),
-              MyText(text:'Account',fontSize:20,),
+              MyText(text:'Account',fontSize:20,font:FontWeight.bold,),
+
               const SizedBox(height:10,),
               Container(
                 height:352,
@@ -85,7 +95,7 @@ class AccountView extends StatelessWidget {
                           color:Color(0xffF3F3F3)
                         ),
                       ),
-                      title:MyText(text:'Profile Settings',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Profile Settings',fontSize:18,),
                     ),
                     const Divider(
                       color:Color(0xffE5E5E5),
@@ -100,7 +110,7 @@ class AccountView extends StatelessWidget {
                             color:Color(0xffF3F3F3)
                         ),
                       ),
-                      title:MyText(text:'Stadium Management',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Stadium Management',fontSize:18,),
                     ),
                     const Divider(
                       color:Color(0xffE5E5E5),
@@ -115,7 +125,7 @@ class AccountView extends StatelessWidget {
                             color:Color(0xffF3F3F3)
                         ),
                       ),
-                      title:MyText(text:'Notifications',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Notifications',fontSize:18,),
                       trailing:Switch(
                         activeColor:primaryLight,
                           value:true, onChanged: (val){
@@ -140,14 +150,14 @@ class AccountView extends StatelessWidget {
                         ),
 
                       ),
-                      title:MyText(text:'Review & Ratings',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Review & Ratings',fontSize:18,),
                     ),
 
                   ],
                 ),
               ),
               const SizedBox(height:20,),
-              MyText(text:'Help Center',fontSize:20,),
+              MyText(font:FontWeight.bold,text:'Help Center',fontSize:20,),
               const SizedBox(height:20,),
               Container(
                 height:265,
@@ -170,8 +180,9 @@ class AccountView extends StatelessWidget {
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
                         ),
+                        child:Icon(Icons.question_mark,color:primaryLight,size:15,),
                       ),
-                      title:MyText(text:'Contact Us',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Contact Us',fontSize:18,),
                     ),
                     const Divider(
                       color:Color(0xffE5E5E5),
@@ -184,12 +195,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/Group 18430.png')),
+                            image:DecorationImage(image:AssetImage('assets/privacy.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
                         ),
                       ),
-                      title:MyText(text:'Terms & Privacy Policy',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Terms & Privacy Policy',fontSize:18,),
                     ),
                     const Divider(
                       color:Color(0xffE5E5E5),
@@ -200,38 +211,47 @@ class AccountView extends StatelessWidget {
                           context: context,
                           builder: (BuildContext context) {
                             return AlertDialog(
-                              title:MyText(text:'Hi James Leo',fontSize:22,),
-                              content:MyText(text:'Are you sure you want to Logout?',fontSize:16,color:Colors.black45,),
+                              title:Center(child: MyText(text:'Logout',fontSize:32,font:FontWeight.bold,)),
+                              content:Column(
+                                mainAxisSize:MainAxisSize.min,
+                                children: [
+                                  MyText(text:'Hi James Leo',fontSize:18,font:FontWeight.bold,),
+                                  MyText(text:'Are you sure you want to Logout?',fontSize:18,color:Colors.black,font:FontWeight.bold,),
+                                ],
+                              ),
                               actions: [
-                                Row(
-                                  mainAxisAlignment:MainAxisAlignment.spaceAround,
-                                  children: [
-                                    InkWell(
-                                      onTap:(){
-                                        Navigator.pop(context);
-                                      },
-                                      child: Container(
-                                        height:35,
-                                        width:130,
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical:10),
+                                  child: Row(
+                                    mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      InkWell(
+                                        onTap:(){
+                                          Navigator.pop(context);
+                                        },
+                                        child: Container(
+                                          height:41,
+                                          width:150,
+                                          decoration:BoxDecoration(
+                                              borderRadius:BorderRadius.circular(10),
+                                              border:Border.all(
+                                                  color:primaryLight
+                                              )
+                                          ),
+                                          child:Center(child: MyText(font:FontWeight.bold,text:'No',color:primaryLight,fontSize:18,)),
+                                        ),
+                                      ),
+                                      Container(
+                                        height:41,
+                                        width:150,
                                         decoration:BoxDecoration(
                                             borderRadius:BorderRadius.circular(10),
-                                            border:Border.all(
-                                                color:primaryLight
-                                            )
+                                            color:primaryLight
                                         ),
-                                        child:Center(child: MyText(text:'No',color:primaryLight,fontSize:18,)),
+                                        child:Center(child: MyText(font:FontWeight.bold,text:'Yes',color:Colors.white,fontSize:18,)),
                                       ),
-                                    ),
-                                    Container(
-                                      height:35,
-                                      width:130,
-                                      decoration:BoxDecoration(
-                                          borderRadius:BorderRadius.circular(10),
-                                          color:primaryLight
-                                      ),
-                                      child:Center(child: MyText(text:'Yes',color:Colors.white,fontSize:18,)),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 )
                               ],
                             );
@@ -242,12 +262,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/Vector.png')),
+                            image:DecorationImage(image:AssetImage('assets/logout.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
                         ),
                       ),
-                      title:MyText(text:'Log Out',fontSize:18,),
+                      title:MyText(font:FontWeight.bold,text:'Log Out',fontSize:18,),
                     ),
 
                   ],

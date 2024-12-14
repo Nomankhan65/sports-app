@@ -42,21 +42,21 @@ class _HomePageState extends State<HomePage> {
             currentIndex = index; // Update the selected tab index
           });
         },
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view),
-            label: 'Home',
+              icon:Image.asset('assets/homeIcon.png'),
+              label:'Home'
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notification_important_outlined),
+            icon:Image.asset('assets/notificationIcon.png'),
             label: 'Notification',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.wallet),
-            label: 'My Wallet',
+            icon:Image.asset('assets/wallet.png'),
+            label:'Wallet'
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person_pin),
+            icon:Image.asset('assets/accountIcon.png'),
             label: 'Account',
           ),
         ],

@@ -12,14 +12,14 @@ class RatingView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title:MyText(text:'Reviews & Ratings',),
+        title:MyText(text:'Reviews & Ratings',  font:FontWeight.bold,),
       ),
       body:Padding(
         padding: const EdgeInsets.symmetric(horizontal:20,vertical:10),
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.start,
           children: [
-            MyText(text:'Overall Ratings',fontSize:20,),
+            MyText(text:'Overall Ratings',fontSize:20,  font:FontWeight.bold,),
             const SizedBox(height:20,),
             Row(
               mainAxisAlignment:MainAxisAlignment.spaceBetween,
@@ -27,13 +27,27 @@ class RatingView extends StatelessWidget {
                 Column(
                   crossAxisAlignment:CrossAxisAlignment.start,
                   children: [
-                    MyText(text:'4.0',fontSize:20,),
-                    MyText(text:'*****',color:Colors.orange,fontSize:25,),
-                    MyText(text:'50 Reviews',fontSize:12,color:Colors.black45,),
+                    MyText(text:'4.0',fontSize:25, font:FontWeight.bold,),
+                    MyText(text:'*****',color:Colors.orange,fontSize:30, font:FontWeight.bold,),
+                    MyText(text:'50 Reviews',fontSize:16,color:Colors.black45, font:FontWeight.bold,),
                   ],
                 ),
                 Column(
                   children: [
+                    Row(
+                      children: [
+                        MyText(text:'5',fontSize:12,color:Colors.black45,),
+                        const SizedBox(width:2,),
+                        Container(
+                          height:10,
+                          width:211,
+                          decoration:BoxDecoration(
+                              color:primaryLight,
+                              borderRadius:BorderRadius.circular(8)
+                          ),
+                        ),
+                      ],
+                    ),
                     Row(
                       children: [
                         MyText(text:'4',fontSize:12,color:Colors.black45,),
@@ -104,11 +118,12 @@ class RatingView extends StatelessWidget {
                   image: DecorationImage(
                       image: AssetImage('assets/Frame 155.png'))),
             ),
-              title:MyText(text:'Albert Flores',fontSize:18,),
+              title:MyText(text:'Albert Flores',fontSize:18, font:FontWeight.bold,),
             ),
             Row(
+              crossAxisAlignment:CrossAxisAlignment.start,
               children: [
-                MyText(text:'****** ',fontSize:20,color:Colors.orange,),
+                MyText(text:'****** ',fontSize:20,color:Colors.orange, font:FontWeight.bold),
                 MyText(text:'21 july 2024',fontSize:12,color:Colors.black45,),
               ],
             ),
@@ -124,11 +139,11 @@ class RatingView extends StatelessWidget {
                     image: DecorationImage(
                         image: AssetImage('assets/Frame 155.png'))),
               ),
-              title:MyText(text:'Albert Flores',fontSize:18,),
+              title:MyText(text:'Albert Flores',fontSize:18, font:FontWeight.bold,),
             ),
-            Row(
+            Row(  crossAxisAlignment:CrossAxisAlignment.start,
               children: [
-                MyText(text:'****** ',fontSize:20,color:Colors.orange,),
+                MyText(text:'****** ',fontSize:20,color:Colors.orange, font:FontWeight.bold,),
                 MyText(text:'21 july 2024',fontSize:12,color:Colors.black45,),
               ],
             ),

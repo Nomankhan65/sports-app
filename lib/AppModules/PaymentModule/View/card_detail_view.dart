@@ -11,8 +11,12 @@ class CardDetailView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return Scaffold(
+     bottomNavigationBar:Padding(
+       padding: const EdgeInsets.all(20),
+       child: MyButton(text: 'Save', onTap: (){}),
+     ),
       appBar:AppBar(
-        title:MyText(text:'Card Details',fontSize:20,),
+        title:MyText(font:FontWeight.bold,text:'Card Details',fontSize:20,),
       ),
       body:Padding(
         padding: const EdgeInsets.all(20),
@@ -20,19 +24,19 @@ class CardDetailView extends StatelessWidget {
           crossAxisAlignment:CrossAxisAlignment.start,
           children: [
 
-            MyText(text:'Add Card details',fontSize:23,),
+            MyText(font:FontWeight.bold,text:'Add Card details',fontSize:23,),
             MyText(text:'Your transactions are secured and encrypted',fontSize:16,color:Colors.black45,),
             const SizedBox(height:30,),
-            MyText(text:'Card Number*',),
+            MyText(font:FontWeight.bold,text:'Card Number*',),
             MyFormField(horizonatlPadding:0,text: '120879389839'),
-            MyText(text:'Name on the Card*',),
+            MyText(font:FontWeight.bold,text:'Name on the Card*',),
             MyFormField(horizonatlPadding:0,text: 'Ex william'),
-            MyText(text:'Withdraw Method',),
+            MyText(font:FontWeight.bold,text:'Withdraw Method',),
             MyFormField(horizonatlPadding:0,text: 'Card'),
             const SizedBox(
               height:150,
             ),
-            MyButton(text: 'Save', onTap: (){})
+
           ],
         ),
       ),

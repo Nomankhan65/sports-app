@@ -29,7 +29,7 @@ class HomeView extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal:20),
         child: Column(
           children: [
-            MyFormField(horizonatlPadding:0,text:'Search...',icon:const Icon(Icons.search),),
+            MyFormField(horizonatlPadding:0,text:'Search...',icon:const Image(image:AssetImage('assets/search.png')),),
             Container(
               height:80,
               width:double.infinity,

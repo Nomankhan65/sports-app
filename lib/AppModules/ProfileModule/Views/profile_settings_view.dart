@@ -15,6 +15,7 @@ class ProfileSettingsView extends StatelessWidget {
       appBar:AppBar(
         title:MyText(
           text:'Profile Settings',fontSize:20,
+          font:FontWeight.bold,
         ),
 
       ),
@@ -54,7 +55,7 @@ class ProfileSettingsView extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20,),
-              MyText(text:'Name',fontSize:18,),
+              MyText(text:'Name',fontSize:18,  font:FontWeight.bold,),
                 TextFormField(
                 decoration:const InputDecoration(
                   hintText:'James Leo',
@@ -63,7 +64,7 @@ class ProfileSettingsView extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20,),
-              MyText(text:'Email',fontSize:18,),
+              MyText(text:'Email',fontSize:18,  font:FontWeight.bold,),
               TextFormField(
                 decoration:const InputDecoration(
                     hintText:'jamesleo385@gmail.com',
@@ -71,7 +72,7 @@ class ProfileSettingsView extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20,),
-              MyText(text:'Phone Number',fontSize:18,),
+              MyText(text:'Phone Number',fontSize:18,  font:FontWeight.bold,),
               TextFormField(
                 decoration:const InputDecoration(
                     hintText:'+971 97893920',
@@ -79,7 +80,7 @@ class ProfileSettingsView extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20,),
-              MyText(text:'Password',fontSize:18,),
+              MyText(text:'Password',fontSize:18,  font:FontWeight.bold,),
               TextFormField(
                 decoration:const InputDecoration(
                     hintText:'*********',

@@ -19,6 +19,7 @@ class WalletView extends StatelessWidget {
         title: MyText(
           text: 'Wallet Details',
           color: Colors.white,
+          font:FontWeight.bold,
           fontSize: 20,
         ),
       ),
@@ -41,6 +42,7 @@ class WalletView extends StatelessWidget {
                     MyText(
                       text: 'My Wallet Details',
                       fontSize: 18,
+                      font:FontWeight.bold,
                     ),
                     const SizedBox(
                       height: 15,
@@ -122,6 +124,7 @@ class WalletView extends StatelessWidget {
               children: [
                 MyText(
                   text: 'Transaction History: ',
+                  font:FontWeight.bold,
                   fontSize: 20,
                 ),
                 Container(
@@ -142,6 +145,7 @@ class WalletView extends StatelessWidget {
                         text: 'Export CSV',
                         fontSize: 12,
                         color: Colors.black45,
+                        font:FontWeight.bold,
                       )
                     ],
                   ),
@@ -172,20 +176,23 @@ class WalletView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        const SizedBox(width:15,),
+                        const SizedBox(width:25,),
                         MyText(
+                          font:FontWeight.bold,
                           text: 'Description',
                           fontSize: 15,
                           color: Colors.white,
                         ),
-                        const SizedBox(width:60,),
+                        const SizedBox(width:80,),
                         MyText(
+                          font:FontWeight.bold,
                           text: 'Date',
                           fontSize: 15,
                           color: Colors.white,
                         ),
-                        const SizedBox(width:70,),
+                        const SizedBox(width:100,),
                         MyText(
+                          font:FontWeight.bold,
                           text: 'Amount',
                           fontSize: 15,
                           color: Colors.white,
@@ -195,8 +202,7 @@ class WalletView extends StatelessWidget {
                   ),
                   Table(
                     border: TableBorder.all(
-                        color: Colors
-                            .black26), // Optional: Adds border to the table
+                        color: Colors.black12), // Optional: Adds border to the table
                     children: [
                       TableRow(
                         children: [
@@ -352,7 +358,7 @@ class WalletView extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height:100,
+              height:80,
             ),
             MyButton(text: 'Request New Withdraw', onTap: (){
               Navigator.push(context,MaterialPageRoute(builder: (_)=>const WithdrawDetailView()));

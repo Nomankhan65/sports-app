@@ -33,16 +33,16 @@ class _EditGroundViewState extends State<EditGroundView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title:MyText(text:'Edit Stadium',fontSize:20,),
+        title:MyText(font:FontWeight.bold,text:'Edit Stadium',fontSize:20,),
       ),
       body:Padding(
         padding: const EdgeInsets.symmetric(horizontal:20,vertical:5),
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.start,
           children: [
-            MyText(text:' Stadium Name* ',fontSize:18,),
+            MyText(font:FontWeight.bold,text:' Stadium Name* ',fontSize:18,),
             MyFormField(horizonatlPadding:0,text:'National ABC Stadium'),
-            MyText(text:' Location of Stadium* ',fontSize:18,),
+            MyText(font:FontWeight.bold,text:' Location of Stadium* ',fontSize:18,),
             MyFormField(horizonatlPadding:0,text:'Golf Sports Academy, Dubai ~ 05.56 kms'),
             const SizedBox(height:10,),
             Row(
@@ -51,7 +51,7 @@ class _EditGroundViewState extends State<EditGroundView> {
                 Column(
                   crossAxisAlignment:CrossAxisAlignment.start,
                   children: [
-                    MyText(text:'Opening Time*',fontSize:18,),
+                    MyText(font:FontWeight.bold,text:'Opening Time*',fontSize:18,),
                     const SizedBox(height:10,),
                     InkWell(
                       onTap:()=>_selectTime(context),
@@ -74,7 +74,7 @@ class _EditGroundViewState extends State<EditGroundView> {
                 Column(
                   crossAxisAlignment:CrossAxisAlignment.start,
                   children: [
-                    MyText(text:'Opening Time*',fontSize:18,),
+                    MyText(font:FontWeight.bold,text:'Closing Time*',fontSize:18,),
                     const SizedBox(height:10,),
                     InkWell(
                       onTap:()=>_selectTime(context),
@@ -97,7 +97,7 @@ class _EditGroundViewState extends State<EditGroundView> {
               ],
             ),
             const SizedBox(height:20,),
-            MyText(text:' Types of Games* ',fontSize:18,),
+            MyText(font:FontWeight.bold,text:' Types of Games* ',fontSize:18,),
             const SizedBox(height:10,),
             Container(
               height:250,
@@ -114,7 +114,7 @@ class _EditGroundViewState extends State<EditGroundView> {
                     Row(
                       mainAxisAlignment:MainAxisAlignment.spaceAround,
                       children: [
-                        MyText(text:'Games Types',color:Colors.black54,),
+                        MyText(font:FontWeight.bold,text:'Games Types',color:Colors.black54,),
                         const Icon(Icons.arrow_drop_up,color:Colors.black54,)
                       ],
                     ),
