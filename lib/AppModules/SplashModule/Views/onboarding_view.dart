@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../Widgets/my_text.dart';
 import 'package:gosportified/AppModules/AuthModule/Views/signIn_view.dart';
 class OnBoardingView extends StatelessWidget {
@@ -17,8 +18,36 @@ class OnBoardingView extends StatelessWidget {
              decoration:const BoxDecoration(
                image:DecorationImage(fit:BoxFit.cover, image:AssetImage('assets/map.png'))
              ),
-             child:Center(
-               child:Image.asset('assets/person.png'),
+             child:Column(
+               mainAxisAlignment: MainAxisAlignment.start,
+               children: [
+                 const SizedBox(height:50,),
+                 const Image(image: AssetImage('assets/Location.png')),
+                 const SizedBox(height:50,),
+                 const Row(
+                   mainAxisAlignment:MainAxisAlignment.start,
+                   children: [
+                     const SizedBox(width:30,),
+                      Image(image: AssetImage('assets/Location.png')),
+                     const SizedBox(width:280,),
+                   Image(image: AssetImage('assets/Location.png'))
+                 ],),
+                 const Row(
+                   mainAxisAlignment:MainAxisAlignment.center,
+                   children: [
+                     SizedBox(width:80,),
+                     Image(image: AssetImage('assets/Location.png')),
+                   ],
+                 ),
+                 Image.asset('assets/person.png'),
+                 const SizedBox(height:40,),
+                 const Row(
+                   mainAxisAlignment:MainAxisAlignment.spaceAround,
+                   children: [
+                     Image(image: AssetImage('assets/Location.png')),
+                     Image(image: AssetImage('assets/Location.png'))
+                   ],),
+               ],
              )
           ),
           // Stack with Positioned Image
