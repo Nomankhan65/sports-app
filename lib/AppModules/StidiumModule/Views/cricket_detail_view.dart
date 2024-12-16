@@ -73,7 +73,7 @@ class CricketDetailView extends StatelessWidget {
                               mainAxisAlignment:MainAxisAlignment.spaceBetween,
                               crossAxisAlignment:CrossAxisAlignment.start,
                               children: [
-                                MyText(  font:FontWeight.bold,text:'Booked Slot',fontSize:16,color:Colors.black54,),
+                                MyText(  font:FontWeight.bold,text:'Booked Slot',fontSize:16,color:Colors.black,),
                                 Column(
                                   children: [
                                     MyText(text:'05:00 PM - 07:00PM',fontSize:16,color:Colors.black54,),

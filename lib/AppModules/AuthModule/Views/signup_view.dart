@@ -39,11 +39,16 @@ class _SignupViewState extends State<SignupView> {
                 fontSize:15,
               ),
               const SizedBox(height:20,),
-              MyText(
-                font:FontWeight.bold,
-                text:'Name',
-                color:Colors.black87,
-                fontSize:18,
+              Row(
+                children: [
+                  MyText(
+                    font:FontWeight.bold,
+                    text:'Name',
+                    color:Colors.black87,
+                    fontSize:18,
+                  ),
+                  MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                ],
               ),
               MyFormField(text:'Stadium Owner Name',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:15,),
@@ -54,11 +59,16 @@ class _SignupViewState extends State<SignupView> {
               ),
               MyFormField(text:'example@gmail.com',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:15,),
-              MyText(
-                font:FontWeight.bold,
-                text:'Phone number',
-                color:Colors.black87,
-                fontSize:18,
+              Row(
+                children: [
+                  MyText(
+                    font:FontWeight.bold,
+                    text:'Phone number',
+                    color:Colors.black87,
+                    fontSize:18,
+                  ),
+                  MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                ],
               ),
               MyFormField(text:'+971 |  Enter phone number',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:15,),
@@ -68,7 +78,7 @@ class _SignupViewState extends State<SignupView> {
                 color:Colors.black87,
                 fontSize:18,
               ),
-              MyFormField(text:'************',horizonatlPadding:0,verticalPadding:5,),
+              MyFormField(text:'************',horizonatlPadding:0,verticalPadding:5,icon:const Icon(Icons.visibility_off),),
               Row(
                 children: [
               Checkbox(

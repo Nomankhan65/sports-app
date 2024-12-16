@@ -42,7 +42,7 @@ class StadiumDetailView extends StatelessWidget {
                           topLeft: Radius.circular(15),
                           topRight: Radius.circular(15),
                         ),
-                        color: primaryLight.withOpacity(0.7)),
+                        color: primaryLight.withOpacity(0.5)),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal:20),
                       child: Row(

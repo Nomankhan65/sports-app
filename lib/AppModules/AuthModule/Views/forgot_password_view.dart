@@ -30,6 +30,7 @@ class ForgotPasswordView extends StatelessWidget {
                 color:Colors.black45,
                 fontSize:15,
                 maxlines:2,
+                font:FontWeight.bold,
               ),
               const SizedBox(height:50,),
               MyText(
@@ -41,7 +42,7 @@ class ForgotPasswordView extends StatelessWidget {
               MyFormField(text:'example@gmail.com',horizonatlPadding:0,verticalPadding:5,),
               const SizedBox(height:100,),
               MyButton(onTap:(){
-                Navigator.push(context,MaterialPageRoute(builder: (c)=>const OtpView()));
+                Navigator.push(context,MaterialPageRoute(builder: (c)=>  OtpView()));
               },text:'Reset Password'),
             ],
           ),

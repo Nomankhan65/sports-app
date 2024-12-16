@@ -15,15 +15,37 @@ class CreatePitchView extends StatelessWidget {
         title:MyText(font:FontWeight.bold,text:'Create Pitch',fontSize:20,),
       ),
       body:Padding(
-        padding: const EdgeInsets.symmetric(horizontal:20,vertical:5),
+        padding: const EdgeInsets.symmetric(horizontal:20,vertical:20),
         child: Column(
           crossAxisAlignment:CrossAxisAlignment.start,
           children: [
-            MyText(font:FontWeight.bold,text:'Pitch* ',fontSize:18,),
+            Row(
+              children: [
+                MyText(font:FontWeight.bold,text:'Pitch',fontSize:18,),
+                MyText(font:FontWeight.bold,text:'* ',fontSize:18,color:Colors.red,),
+              ],
+            ),
             MyFormField(horizonatlPadding:0,text:'Pitch Name'),
-            MyText(font:FontWeight.bold,text:' Location of Stadium* ',fontSize:18,),
+            Row(
+              children: [
+                MyText(font:FontWeight.bold,text:' Location of Stadium ',fontSize:18,),
+                MyText(font:FontWeight.bold,text:'* ',fontSize:18,color:Colors.red,),
+              ],
+            ),
             MyFormField(horizonatlPadding:0,text:'Enter Rate Amount in AED '),
-            MyText(font:FontWeight.bold,text:'Peak Hours Rate* ',fontSize:18,),
+            Row(
+              children: [
+                MyText(font:FontWeight.bold,text:'Peak Hours Rate',fontSize:18,),
+                MyText(font:FontWeight.bold,text:'* ',fontSize:18,color:Colors.red,),
+              ],
+            ),
+            const SizedBox(height:5,),
+            Container(height:25,width:300,decoration: BoxDecoration(
+              color:const Color(0xffF3F3F3),
+              borderRadius:BorderRadius.circular(5),
+            ),
+            child:Center(child: MyText(text:'Use the hourly rate if peak hours don’t apply',fontSize:12,)),
+            ),
             MyFormField(horizonatlPadding:0,text:'Enter Rate Amount in AED '),
             const SizedBox(height:20,),
             Container(
@@ -47,8 +69,9 @@ class CreatePitchView extends StatelessWidget {
                           context: context,
                           builder: (BuildContext context) {
                             return AlertDialog(
-                              title:MyText(text:'Peak Hours',fontSize:22,),
+                              title:Center(child: MyText(text:'Peak Hours',fontSize:32,font:FontWeight.bold,)),
                               content:Column(
+                                mainAxisSize:MainAxisSize.min,
                                 children: [
                                   Container(
                                 height:50,
@@ -56,10 +79,10 @@ class CreatePitchView extends StatelessWidget {
                                 decoration:BoxDecoration(
                                     borderRadius:BorderRadius.circular(10),
                                     border:Border.all(
-                                        color:const Color(0xffE5E5E5)
+                                        color:primaryLight
                                     )
                                 ),
-                                  child:Center(child: MyText(text:'10:00 AM - 11:00 AM',color:Colors.black45,fontSize:16,)),
+                                  child:Center(child: MyText(text:'10:00 AM - 11:00 AM',color:primaryLight,fontSize:16,)),
                                 ),
                                   const SizedBox(height:20,),
                                   Container(
@@ -98,7 +121,7 @@ class CreatePitchView extends StatelessWidget {
                                       },
                                       child: Container(
                                         height:35,
-                                        width:130,
+                                        width:140,
                                         decoration:BoxDecoration(
                                             borderRadius:BorderRadius.circular(10),
                                             border:Border.all(
@@ -110,7 +133,7 @@ class CreatePitchView extends StatelessWidget {
                                     ),
                                     Container(
                                       height:35,
-                                      width:130,
+                                      width:140,
                                       decoration:BoxDecoration(
                                           borderRadius:BorderRadius.circular(10),
                                           color:primaryLight

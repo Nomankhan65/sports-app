@@ -51,7 +51,7 @@ class SignInView extends StatelessWidget {
                 fontSize:18,
                 font:FontWeight.bold,
               ),
-              MyFormField(text:'************',horizonatlPadding:0,verticalPadding:0,),
+              MyFormField(text:'************',horizonatlPadding:0,verticalPadding:0,icon:const Icon(Icons.visibility_off,color:Colors.black45,),),
               Align(
                 alignment:Alignment.topRight,
                 child:TextButton(onPressed: (){
@@ -60,6 +60,7 @@ class SignInView extends StatelessWidget {
                   text:'Forgot password?',
                   color:primaryLight,
                   fontSize:15,
+                  font:FontWeight.bold,
 
                 ),)
               ),

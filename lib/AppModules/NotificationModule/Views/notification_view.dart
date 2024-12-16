@@ -5,7 +5,6 @@ import '../../../Utils/app_colors.dart';
 
 class NotificationView extends StatelessWidget {
   const NotificationView({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +33,7 @@ class NotificationView extends StatelessWidget {
                   unselectedLabelColor:Colors.grey,
                   indicatorSize: TabBarIndicatorSize.label,
                   unselectedLabelStyle:const TextStyle(
-                    color:Colors.grey,
+                    color: Colors.grey,
                   ),
                   indicator: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),

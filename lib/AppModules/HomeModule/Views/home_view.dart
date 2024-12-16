@@ -98,7 +98,7 @@ class HomeView extends StatelessWidget {
                     subtitle:Row(
                       children: [
                         const Icon(Icons.location_on_outlined,size:15,color:Colors.black45,),
-                        MyText(text:' Golf Sports Academy,Dubai~5.5 kms',fontSize:12,color:Colors.black45,),
+                        MyText(text:' Golf Sports Academy,Dubai~5.5 kms',font:FontWeight.bold,fontSize:12,color:Colors.black45,),
                       ],
                     ),
                   ),
@@ -107,8 +107,8 @@ class HomeView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
-                        MyText(text:'Timings',color:Colors.black45,fontSize:16,),
-                        MyText(text:'09:00 AM - 08:00 PM',color:Colors.black,fontSize:16,)
+                        MyText(font:FontWeight.bold,text:'Timings',color:Colors.black45,fontSize:16,),
+                        MyText(font:FontWeight.bold,text:'09:00 AM - 08:00 PM',color:Colors.black,fontSize:16,)
                       ],
                     ),
                   ),
@@ -117,8 +117,8 @@ class HomeView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment:MainAxisAlignment.spaceBetween,
                       children: [
-                        MyText(text:'Type of Game ',color:Colors.black45,fontSize:16,),
-                        MyText(text:'Cricket, Football',color:Colors.black,fontSize:16,)
+                        MyText(font:FontWeight.bold,text:'Type of Game ',color:Colors.black45,fontSize:16,),
+                        MyText(font:FontWeight.bold,text:'Cricket, Football',color:Colors.black,fontSize:16,)
                       ],
                     ),
                   ),

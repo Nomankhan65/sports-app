@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gosportified/Utils/app_colors.dart';
 import 'package:gosportified/AppModules/HistoryModule/Views/privacy_policy_view.dart';
 import 'package:gosportified/AppModules/ProfileModule/Views/profile_settings_view.dart';
@@ -90,9 +91,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                          image:DecorationImage(image:AssetImage('assets/Vector.png')),
                           shape:BoxShape.circle,
                           color:Color(0xffF3F3F3)
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/accountActive.svg'),
                         ),
                       ),
                       title:MyText(font:FontWeight.bold,text:'Profile Settings',fontSize:18,),
@@ -105,9 +109,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/Group 18430.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/stidium.svg'),
                         ),
                       ),
                       title:MyText(font:FontWeight.bold,text:'Stadium Management',fontSize:18,),
@@ -120,9 +127,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/Group 18429.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/notifyActive.svg'),
                         ),
                       ),
                       title:MyText(font:FontWeight.bold,text:'Notifications',fontSize:18,),
@@ -144,9 +154,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/review.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/review.svg'),
                         ),
 
                       ),
@@ -176,11 +189,13 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/privacy.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
                         ),
-                        child:Icon(Icons.question_mark,color:primaryLight,size:15,),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/contact.svg'),
+                        ),
                       ),
                       title:MyText(font:FontWeight.bold,text:'Contact Us',fontSize:18,),
                     ),
@@ -195,9 +210,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/privacy.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/privacy.svg'),
                         ),
                       ),
                       title:MyText(font:FontWeight.bold,text:'Terms & Privacy Policy',fontSize:18,),
@@ -262,9 +280,12 @@ class AccountView extends StatelessWidget {
                         height:50,
                         width:50,
                         decoration:const BoxDecoration(
-                            image:DecorationImage(image:AssetImage('assets/logout.png')),
                             shape:BoxShape.circle,
                             color:Color(0xffF3F3F3)
+                        ),
+                        child:Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: SvgPicture.asset('assets/logout.svg'),
                         ),
                       ),
                       title:MyText(font:FontWeight.bold,text:'Log Out',fontSize:18,),

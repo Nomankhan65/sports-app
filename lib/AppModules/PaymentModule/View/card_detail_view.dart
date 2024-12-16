@@ -27,9 +27,19 @@ class CardDetailView extends StatelessWidget {
             MyText(font:FontWeight.bold,text:'Add Card details',fontSize:23,),
             MyText(text:'Your transactions are secured and encrypted',fontSize:16,color:Colors.black45,),
             const SizedBox(height:30,),
-            MyText(font:FontWeight.bold,text:'Card Number*',),
+            Row(
+              children: [
+                MyText(font:FontWeight.bold,text:'Card Number',),
+                MyText(font:FontWeight.bold,text:'*',color:Colors.red,),
+              ],
+            ),
             MyFormField(horizonatlPadding:0,text: '120879389839'),
-            MyText(font:FontWeight.bold,text:'Name on the Card*',),
+            Row(
+              children: [
+                MyText(font:FontWeight.bold,text:'Name on the Card',),
+                MyText(font:FontWeight.bold,text:'*',color:Colors.red,),
+              ],
+            ),
             MyFormField(horizonatlPadding:0,text: 'Ex william'),
             MyText(font:FontWeight.bold,text:'Withdraw Method',),
             MyFormField(horizonatlPadding:0,text: 'Card'),

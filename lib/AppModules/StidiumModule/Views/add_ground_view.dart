@@ -44,9 +44,19 @@ class _AddgroundScreenState extends State<AddgroundScreen> {
           child: Column(
             crossAxisAlignment:CrossAxisAlignment.start,
             children: [
-              MyText(  font:FontWeight.bold,text:' Stadium Name* ',fontSize:18,),
+              Row(
+                children: [
+                  MyText(  font:FontWeight.bold,text:' Stadium Name',fontSize:18,),
+                  MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                ],
+              ),
               MyFormField(horizonatlPadding:0,text:'National ABC Stadium'),
-              MyText(  font:FontWeight.bold,text:' Location of Stadium* ',fontSize:18,),
+              Row(
+                children: [
+                  MyText(  font:FontWeight.bold,text:' Location of Stadium',fontSize:18,),
+                  MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                ],
+              ),
               MyFormField(horizonatlPadding:0,text:'Golf Sports Academy, Dubai ~ 05.56 kms'),
               const SizedBox(height:10,),
               Row(
@@ -55,7 +65,12 @@ class _AddgroundScreenState extends State<AddgroundScreen> {
                   Column(
                     crossAxisAlignment:CrossAxisAlignment.start,
                     children: [
-                      MyText(  font:FontWeight.bold,text:'Opening Time*',fontSize:18,),
+                      Row(
+                        children: [
+                          MyText(  font:FontWeight.bold,text:'Opening Time',fontSize:18,),
+                          MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                        ],
+                      ),
                       const SizedBox(height:10,),
                       InkWell(
                         onTap:()=>_selectTime(context),
@@ -78,7 +93,12 @@ class _AddgroundScreenState extends State<AddgroundScreen> {
                   Column(
                     crossAxisAlignment:CrossAxisAlignment.start,
                     children: [
-                      MyText(  font:FontWeight.bold,text:'Closing Time*',fontSize:18,),
+                      Row(
+                        children: [
+                          MyText(  font:FontWeight.bold,text:'Closing Time',fontSize:18,),
+                          MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                        ],
+                      ),
                       const SizedBox(height:10,),
                       InkWell(
                         onTap:()=>_selectTime(context),
@@ -101,7 +121,12 @@ class _AddgroundScreenState extends State<AddgroundScreen> {
                 ],
               ),
               const SizedBox(height:20,),
-              MyText(  font:FontWeight.bold,text:' Types of Games* ',fontSize:18,),
+              Row(
+                children: [
+                  MyText(  font:FontWeight.bold,text:' Types of Games',fontSize:18,),
+                  MyText(  font:FontWeight.bold,text:'*',fontSize:18,color:Colors.red,),
+                ],
+              ),
               const SizedBox(height:10,),
               Padding(
                 padding: const EdgeInsets.all(16.0),

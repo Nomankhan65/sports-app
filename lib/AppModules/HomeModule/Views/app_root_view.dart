@@ -18,11 +18,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int currentIndex = 0; // Variable to track the selected tab index
 
-  static const List<Widget> screenList = [
-    HomeView(),
+  static   List<Widget> screenList = [
+    const HomeView(),
     NotificationView(),
-    WalletView(),
-    AccountView(),
+    const WalletView(),
+    const AccountView(),
   ];
 
   @override
