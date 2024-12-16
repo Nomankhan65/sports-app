@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../Utils/app_colors.dart';
 import '../../../Widgets/my_form_field.dart';
 import '../../../Widgets/my_text.dart';
@@ -21,7 +22,7 @@ class HomeView extends StatelessWidget {
         ),
         backgroundColor:primaryLight,
         title:MyText(text:'Home',color:Colors.white,fontSize:20,  font:FontWeight.bold,),
-        actions:[Image.asset('assets/notify.png'),
+        actions:[SvgPicture.asset('assets/notify.svg'),
         const SizedBox(width:20,),
         ]
       ),
@@ -81,10 +82,17 @@ class HomeView extends StatelessWidget {
                       height:60,
                       width:60,
                       decoration:const BoxDecoration(
-                        color:Color(0xffE5E5E5),
-                        shape:BoxShape.circle
+                        color:Color(0xffF3F3F3),
+                        shape:BoxShape.circle,
                       ),
-                      child:const Icon(Icons.stadium),
+                      child:Padding(
+                        padding: const EdgeInsets.all(13),
+                        child: SvgPicture.asset(
+                          'assets/Vector1122.svg',
+                          fit: BoxFit.contain, // Adjust the fit as needed
+                        ),
+                      )
+
                     ),
                     title:MyText(font:FontWeight.bold,text:'National ABC Stadium',fontSize:18,),
                     subtitle:Row(

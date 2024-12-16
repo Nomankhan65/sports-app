@@ -176,21 +176,21 @@ class WalletView extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        const SizedBox(width:25,),
+                        const SizedBox(width:15,),
                         MyText(
                           font:FontWeight.bold,
                           text: 'Description',
                           fontSize: 15,
                           color: Colors.white,
                         ),
-                        const SizedBox(width:80,),
+                        const SizedBox(width:50,),
                         MyText(
                           font:FontWeight.bold,
                           text: 'Date',
                           fontSize: 15,
                           color: Colors.white,
                         ),
-                        const SizedBox(width:100,),
+                        const SizedBox(width:85,),
                         MyText(
                           font:FontWeight.bold,
                           text: 'Amount',
@@ -358,7 +358,7 @@ class WalletView extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height:80,
+              height:65,
             ),
             MyButton(text: 'Request New Withdraw', onTap: (){
               Navigator.push(context,MaterialPageRoute(builder: (_)=>const WithdrawDetailView()));

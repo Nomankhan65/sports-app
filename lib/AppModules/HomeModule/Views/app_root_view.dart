@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gosportified/AppModules/HomeModule/Views/home_view.dart';
 import 'package:gosportified/AppModules/NotificationModule/Views/notification_view.dart';
 import 'package:gosportified/AppModules/PaymentModule/View/wallet_view.dart';
@@ -44,19 +45,19 @@ class _HomePageState extends State<HomePage> {
         },
         items: [
           BottomNavigationBarItem(
-              icon:Image.asset('assets/homeIcon.png'),
+              icon:SvgPicture.asset(currentIndex==0?'assets/HomeActive.svg':'assets/Home.svg'),
               label:'Home'
           ),
           BottomNavigationBarItem(
-            icon:Image.asset('assets/notificationIcon.png'),
+            icon:SvgPicture.asset(currentIndex==1?'assets/notificationActive.svg':'assets/notification.svg'),
             label: 'Notification',
           ),
           BottomNavigationBarItem(
-            icon:Image.asset('assets/wallet.png'),
+            icon:SvgPicture.asset(currentIndex==2?'assets/walletActive.svg':'assets/wallet.svg'),
             label:'Wallet'
           ),
           BottomNavigationBarItem(
-            icon:Image.asset('assets/accountIcon.png'),
+            icon:SvgPicture.asset(currentIndex==3?'assets/accountActive.svg':'assets/account.svg'),
             label: 'Account',
           ),
         ],

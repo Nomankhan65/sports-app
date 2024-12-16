@@ -60,20 +60,35 @@ class OnboardingViewTwo extends StatelessWidget {
               width:double.infinity,// Define a fixed height for the Stack
               decoration:const BoxDecoration(
                 borderRadius:BorderRadius.only(topLeft:Radius.circular(30),topRight:Radius.circular(30)),
-                image:DecorationImage( fit:BoxFit.cover,image: AssetImage('assets/Frame 156.png')),
+                image:DecorationImage( fit:BoxFit.cover,image: AssetImage('assets/sports-stadium 1.png')),
+              ),
+              child:  Column(
+                crossAxisAlignment:CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20,57,0,0),
+                    child:MyText(text:'Stay in Control of \nEverything',font:FontWeight.bold,fontSize:28,maxlines:2,),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.fromLTRB(20,15,0,0),
+                      child:MyText(text:'Manage bookings, finances, and user feedback.',fontSize:15,maxlines:2,color:Colors.black54,)
+                  ),
+
+                ],
+
               ),
             ),
           ),
           Align(
               alignment:Alignment.bottomRight,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal:20,vertical:1),
+                padding: const EdgeInsets.all(20),
                 child: SizedBox(
-                  height:77,
-                  width:77,
+                  height:70,
+                  width:70,
                   child: ElevatedButton(
                       style:ElevatedButton.styleFrom(
-                          backgroundColor:Colors.grey.withOpacity(0.2)
+                          backgroundColor:Colors.black12
                       ),
                       onPressed: (){
 

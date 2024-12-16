@@ -216,7 +216,7 @@ class AccountView extends StatelessWidget {
                                 mainAxisSize:MainAxisSize.min,
                                 children: [
                                   MyText(text:'Hi James Leo',fontSize:18,font:FontWeight.bold,),
-                                  MyText(text:'Are you sure you want to Logout?',fontSize:18,color:Colors.black,font:FontWeight.bold,),
+                                  MyText(maxlines:2,text:'Are you sure you want to Logout?',fontSize:16,color:Colors.black,font:FontWeight.bold,),
                                 ],
                               ),
                               actions: [
@@ -231,7 +231,7 @@ class AccountView extends StatelessWidget {
                                         },
                                         child: Container(
                                           height:41,
-                                          width:150,
+                                          width:130,
                                           decoration:BoxDecoration(
                                               borderRadius:BorderRadius.circular(10),
                                               border:Border.all(
@@ -243,7 +243,7 @@ class AccountView extends StatelessWidget {
                                       ),
                                       Container(
                                         height:41,
-                                        width:150,
+                                        width:130,
                                         decoration:BoxDecoration(
                                             borderRadius:BorderRadius.circular(10),
                                             color:primaryLight
